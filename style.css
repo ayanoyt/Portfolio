@@ -1,3 +1,4 @@
+/* Reset e configurações básicas */
 * {
     margin: 0;
     padding: 0;
@@ -217,24 +218,33 @@ body {
 
 .profile-card {
     position: relative;
-    width: 150px;
-    height: 150px;
+    width: 300px;
+    height: 300px;
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
-    border-radius: 20px; /* Bordas levemente arredondadas no quadrado */
-    overflow: hidden;    /* Garante que nada saia do quadrado */
+    border-radius: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
     border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-.profile-photo {
-    width: 50%;
-    height: 50%;
-    object-fit: cover;    /* Faz a imagem preencher todo o quadrado */
-    display: block;
+.profile-avatar {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
 }
+
+.profile-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px; /* Para manter o arredondamento do profile-card */
+}
+
 .floating-icons {
     position: absolute;
 }
@@ -787,3 +797,4 @@ body {
         font-size: 1.5rem;
     }
 }
+
