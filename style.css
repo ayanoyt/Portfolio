@@ -228,12 +228,15 @@ body {
     border: 1px solid rgba(255, 255, 255, 0.2);
 }
 .profile-photo {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    object-fit: cover; 
-    border: 3px solid #333;
+    max-width: 300px;   
+    max-height: 300px;   
+    width: 100%;         
+    height: auto;        
+    border-radius: 50%;  
+    object-fit: cover;   
+    display: block;
 }
+
 
 .profile-avatar {
     font-size: 4rem;
