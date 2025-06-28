@@ -1,47 +1,392 @@
-
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <title>Portfólio - Eduardo Barros</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eduardo Barros - Desenvolvedor Back-End</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <h1>Eduardo Barros</h1>
-        <p>Desenvolvedor Back-End Júnior | Suporte Técnico | Infraestrutura</p>
-    </header>
-
-    <section class="portfolio">
-        <h2>Projetos</h2>
-
-        <div class="project">
-            <h3>Painel de Administração para Servidor de Games</h3>
-            <p><strong>Tecnologias:</strong> Node.js, Express, SQLite, Bootstrap</p>
-            <p>Sistema web para gerenciar servidor de jogos, com painel de controle, autenticação e gerenciamento de banco de dados.</p>
+    <!-- Navegação -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">Eduardo Barros</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Início</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">Sobre</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#skills" class="nav-link">Habilidades</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link">Projetos</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contato</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
         </div>
+    </nav>
 
-        <div class="project">
-            <h3>Monitor de Uptime de Servidores</h3>
-            <p><strong>Tecnologias:</strong> Node.js, ping, fs</p>
-            <p>Script de linha de comando para checar status de servidores de jogo com logs automáticos.</p>
-        </div>
-
-        <div class="project">
-            <h3>Setup de VPS + Servidor Game em Nuvem</h3>
-            <p><strong>Tecnologias:</strong> Ubuntu, Shell Script, Screen</p>
-            <p>Script e documentação para subir servidor de jogo em nuvem com backups automatizados.</p>
-        </div>
-
-        <div class="project">
-            <h3>Central de Suporte Local</h3>
-            <p><strong>Tecnologias:</strong> Python, Tkinter, SQLite</p>
-            <p>Sistema desktop para registro e acompanhamento de chamados técnicos.</p>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        Olá, eu sou <span class="highlight">Eduardo Barros</span>
+                    </h1>
+                    <p class="hero-subtitle">Desenvolvedor Back-End Júnior | Suporte Técnico | Infraestrutura</p>
+                    <p class="hero-description">
+                        Especializado em desenvolvimento de sistemas robustos e soluções de infraestrutura, 
+                        com foco em Node.js, Python e administração de servidores.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">Ver Projetos</a>
+                        <a href="#contact" class="btn btn-secondary">Entre em Contato</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="profile-card">
+                        <div class="profile-avatar">
+                            <i class="fas fa-user-tie"></i>
+                        </div>
+                        <div class="floating-icons">
+                            <i class="fab fa-node-js"></i>
+                            <i class="fab fa-python"></i>
+                            <i class="fas fa-server"></i>
+                            <i class="fas fa-database"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
-    <footer>
-        <p>© 2025 Eduardo Barros</p>
+    <!-- Sobre -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Sobre Mim</h2>
+                <p class="section-subtitle">Conheça um pouco da minha trajetória</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        Sou um desenvolvedor apaixonado por tecnologia, especializado em desenvolvimento back-end 
+                        e infraestrutura de sistemas. Com experiência em Node.js, Python e administração de servidores, 
+                        busco sempre criar soluções eficientes e escaláveis.
+                    </p>
+                    <p>
+                        Minha experiência inclui desenvolvimento de painéis administrativos, sistemas de monitoramento, 
+                        automação de processos e suporte técnico. Estou sempre em busca de novos desafios e 
+                        oportunidades para crescer profissionalmente.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <span class="stat-number">10+</span>
+                            <span class="stat-label">Projetos</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">2+</span>
+                            <span class="stat-label">Anos Experiência</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">5+</span>
+                            <span class="stat-label">Tecnologias</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Habilidades -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Habilidades Técnicas</h2>
+                <p class="section-subtitle">Tecnologias que domino</p>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <div class="skill-icon">
+                        <i class="fab fa-node-js"></i>
+                    </div>
+                    <h3>Node.js</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="85%"></div>
+                    </div>
+                    <span class="skill-percent">85%</span>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon">
+                        <i class="fab fa-python"></i>
+                    </div>
+                    <h3>Python</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="80%"></div>
+                    </div>
+                    <span class="skill-percent">80%</span>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3>SQLite/MySQL</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="75%"></div>
+                    </div>
+                    <span class="skill-percent">75%</span>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon">
+                        <i class="fab fa-linux"></i>
+                    </div>
+                    <h3>Linux/Ubuntu</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="90%"></div>
+                    </div>
+                    <span class="skill-percent">90%</span>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <h3>Administração de Servidores</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="85%"></div>
+                    </div>
+                    <span class="skill-percent">85%</span>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon">
+                        <i class="fab fa-bootstrap"></i>
+                    </div>
+                    <h3>Bootstrap/CSS</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="70%"></div>
+                    </div>
+                    <span class="skill-percent">70%</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projetos -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Meus Projetos</h2>
+                <p class="section-subtitle">Alguns dos meus trabalhos mais recentes</p>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-gamepad"></i>
+                        </div>
+                        <h3>Painel de Administração para Servidor de Games</h3>
+                    </div>
+                    <div class="project-content">
+                        <p>Sistema web completo para gerenciar servidor de jogos, incluindo painel de controle, sistema de autenticação e gerenciamento de banco de dados.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">Express</span>
+                            <span class="tech-tag">SQLite</span>
+                            <span class="tech-tag">Bootstrap</span>
+                        </div>
+                    </div>
+                    <div class="project-footer">
+                        <a href="#" class="project-link">
+                            <i class="fas fa-external-link-alt"></i>
+                            Ver Projeto
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3>Monitor de Uptime de Servidores</h3>
+                    </div>
+                    <div class="project-content">
+                        <p>Script de linha de comando para monitoramento contínuo do status de servidores de jogo com sistema de logs automáticos e alertas.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">Ping</span>
+                            <span class="tech-tag">File System</span>
+                        </div>
+                    </div>
+                    <div class="project-footer">
+                        <a href="#" class="project-link">
+                            <i class="fas fa-external-link-alt"></i>
+                            Ver Projeto
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-cloud-upload-alt"></i>
+                        </div>
+                        <h3>Setup de VPS + Servidor Game em Nuvem</h3>
+                    </div>
+                    <div class="project-content">
+                        <p>Scripts automatizados e documentação completa para deploy de servidores de jogo em nuvem com sistema de backups automatizados.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Ubuntu</span>
+                            <span class="tech-tag">Shell Script</span>
+                            <span class="tech-tag">Screen</span>
+                            <span class="tech-tag">Cron</span>
+                        </div>
+                    </div>
+                    <div class="project-footer">
+                        <a href="#" class="project-link">
+                            <i class="fas fa-external-link-alt"></i>
+                            Ver Projeto
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-headset"></i>
+                        </div>
+                        <h3>Central de Suporte Local</h3>
+                    </div>
+                    <div class="project-content">
+                        <p>Sistema desktop desenvolvido em Python para registro, acompanhamento e resolução de chamados técnicos com interface intuitiva.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Tkinter</span>
+                            <span class="tech-tag">SQLite</span>
+                        </div>
+                    </div>
+                    <div class="project-footer">
+                        <a href="#" class="project-link">
+                            <i class="fas fa-external-link-alt"></i>
+                            Ver Projeto
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Entre em Contato</h2>
+                <p class="section-subtitle">Vamos conversar sobre oportunidades</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4>Email</h4>
+                            <p>eduardo.barros@email.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-linkedin"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4>LinkedIn</h4>
+                            <p>linkedin.com/in/eduardo-barros</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-github"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4>GitHub</h4>
+                            <p>github.com/eduardo-barros</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4>Telefone</h4>
+                            <p>(11 ) 99999-9999</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Seu Nome" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Seu Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" placeholder="Assunto" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Sua Mensagem" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i>
+                            Enviar Mensagem
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-text">
+                    <p>&copy; 2025 Eduardo Barros. Todos os direitos reservados.</p>
+                </div>
+                <div class="social-links">
+                    <a href="#" class="social-link">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="#" class="social-link">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="#" class="social-link">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
     </footer>
+
+    <!-- Botão de voltar ao topo -->
+    <button id="backToTop" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
 </body>
-</html>
+</html>```
